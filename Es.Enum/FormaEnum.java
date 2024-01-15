@@ -2,22 +2,20 @@ package esenum;
 
 public enum FormaEnum {
 	
-	TRIANGOLO(0.0),
-	RETTANGOLO(0.0);
+	TRIANGOLO,
+	RETTANGOLO;
 	
 	private double area;
 	
-	FormaEnum(double area) {
-		this.area = area;
+	FormaEnum() {
+		
 	}
 
 	public double getArea() {
 		return area;
 	}
 
-	public void setArea(double area) {
-		this.area = area;
-	}
+	
 
 	
 }
