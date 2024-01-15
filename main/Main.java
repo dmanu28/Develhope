@@ -8,7 +8,7 @@ public class Main {
 		//Crea poi una sottoclasse chiamata Rettangolo che fa override del metodo calcolaArea() per calcolare 
 		//l'area del rettangolo.
 		
-		Forma forma = new Forma(1, 5);
+		Forma forma = new Forma();
 		Rettangolo rettangolo = new Rettangolo(2,6);
 		
 		forma.calcolaArea();
