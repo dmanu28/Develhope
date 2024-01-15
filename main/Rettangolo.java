@@ -7,7 +7,6 @@ public class Rettangolo extends Forma {
 	private double area;
 	
 	public Rettangolo(double base, double altezza) {
-		super(base, altezza);
 		this.altezza = altezza;
 		this.base = base;
 	}
@@ -37,8 +36,7 @@ public class Rettangolo extends Forma {
 	}
 	
 	public void calcolaArea() {
-		this.setArea(this.base * this.altezza);
-		System.out.println(this.getArea());
+		System.out.println(base * altezza);
 	}
 	
 	
