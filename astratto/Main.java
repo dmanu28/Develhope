@@ -12,12 +12,6 @@ public class Main {
 		Triangolo triangolo = new Triangolo(3,4);
 		
 		rettangolo.calcolaArea();
-		System.out.println(rettangolo.getArea());
-		
 		triangolo.calcolaArea();
-		System.out.println(triangolo.getArea());
-		System.out.println(rettangolo.pipponator());
-
 	}
-
 }
