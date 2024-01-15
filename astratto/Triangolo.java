@@ -1,15 +1,19 @@
 package astratto;
 
 public class Triangolo extends Forma {
+	
+	private double base;
+	private double altezza;
 
 	public Triangolo(double base, double altezza) {
-		super(base, altezza);
 		
+		this.altezza = altezza;
+		this.base = base;
 	}
 
 	@Override
 	public void calcolaArea() {
-		super.setArea(super.getBase()* super.getAltezza()/2);
+		System.out.println(base * altezza / 2);
 		
 	}
 	
