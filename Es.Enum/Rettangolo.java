@@ -2,15 +2,16 @@ package esenum;
 
 public class Rettangolo extends Forma {
 	
-	private FormaEnum rettangolo = FormaEnum.TRIANGOLO;
+	private double altezza;
+	private double base;
+	private FormaEnum rettangolo = FormaEnum.RETTANGOLO;
 	
 	public Rettangolo(double base, double altezza) {
-		super(base, altezza);
-		
+		this.base = base;
+		this.altezza = altezza;
 	}
 	
 	public void calcolaArea() {
-		super.setArea(super.getAltezza() * super.getBase() );
-		System.out.println(super.getArea());
+		System.out.println(base * altezza);
 	}
 }
