@@ -35,12 +35,8 @@ public class Triangolo {
 	}
 	
 	public void calcolaArea() {
-		this.setArea(this.base * this.altezza);
-		System.out.println(this.getArea());
+		System.out.println(this.base * this.altezza);
 	}
-	
-	
-
 	
 
 }
