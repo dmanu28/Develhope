@@ -2,16 +2,19 @@ package esenum;
 
 public class Triangolo extends Forma {
 
+	private double altezza;
+	private double base;
 	private FormaEnum triangolo = FormaEnum.TRIANGOLO;
 	
 	public Triangolo(double base, double altezza) {
-		super(base, altezza);
 		
+		this.altezza = altezza;
+		this.base = base;
 	}
 	
 	public void calcolaArea() {
-		super.setArea(super.getAltezza() * super.getBase() / 2 );
-		System.out.println(super.getArea());
+		System.out.println(base * altezza/2);
+			
 	}
 
 }
