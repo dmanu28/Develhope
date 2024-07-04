@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modifica Libro</title>
+    </head>
+    <body>
+        <div align="center">
+            <form th:action="@{/libreria/home/aggiungiLibro}" th:object="${libro}" method="post">
+                <table>
+                    <tr>
+                        <th colspan="4">Modifica Libro</th>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="text" th:field="${libro.id}" readonly="readonly" /> </td>
+                    </tr>
+                    <tr>
+                        <td>Titolo</td>
+                        <td><input type="text" th:field="${libro.titolo}"  /> </td>
+                    </tr>
+                    <tr>
+                        <td>Autore</td>
+                        <td><input type="text" th:field="${libro.autore}"  /> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"><button type="submit">Save</button></td>
+                    </tr>
+                </table>
+                <!--<input type="hidden" name="_method" value="PUT">-->
+            </form>
+        </div>
+    </body>
+</html>
